@@ -1,0 +1,55 @@
+/* General TableView styling */
+.table-view {
+    -fx-background-color: transparent; /* Transparent background for the table */
+    -fx-table-cell-border-color: lightgray; /* Light gray border color between cells */
+    -fx-padding: 5px; /* Padding inside the table */
+}
+
+/* Styling for table rows */
+.table-row-cell:odd { 
+    -fx-background-color: lavenderblush; /* LavenderBlush for odd rows */
+}
+
+.table-row-cell:even { 
+    -fx-background-color: #90ee90; /* AliceBlue for even rows */
+}
+
+/* Text color for table cells */
+.table-cell {
+    -fx-text-fill: black; /* Black text for table cells */
+    -fx-border-color: lightgray; /* Light gray borders between cells */
+    -fx-border-width: 0 1px 0 0; /* Borders on the right side of each cell */
+}
+
+/* Styling the column headers */
+.table-view .column-header {
+    -fx-background-color: teal; /* Teal background for column headers */
+    -fx-border-color: lightgray; /* Light gray borders between headers */
+    -fx-border-width: 0 1px 1px 0; /* Add border to the right and below headers */
+}
+
+/* Styling the column header text */
+.table-view .column-header .label {
+    -fx-text-fill: white; /* White text for the header labels */
+    -fx-font-weight: bold; /* Bold font for the header labels */
+    -fx-alignment: center; /* Center-align the header text */
+}
+
+/* Adjust header background for cleaner look */
+.table-view .column-header-background {
+    -fx-background-color: teal; /* Match the header background */
+    -fx-border-color: lightgray; /* Light gray border for the column header background */
+    -fx-border-width: 0 0 1px 0; /* Border below the headers */
+}
+
+/* Highlight selected row */
+.table-row-cell:selected {
+    -fx-background-color: #FF4500; /* OrangeRed background for selected rows */
+    -fx-text-fill: white; /* White text for selected rows */
+}
+
+/* Focused row styling */
+.table-row-cell:focused {
+    -fx-background-color: #FFFF3D; /* Yellow background for focused rows */
+    -fx-text-fill: white; /* White text for focused rows */
+}

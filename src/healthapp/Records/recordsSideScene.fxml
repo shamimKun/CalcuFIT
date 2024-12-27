@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="resetButtonPressure" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#setRese" prefHeight="432.0" prefWidth="320.0" style="-fx-background-color: aliceblue;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthapp.Records.RecordsSideSceneController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Input Your Blood Sugar Lavel" wrappingWidth="258.58203125">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </Text>
+      <TextField fx:id="sugerLavelInput" prefHeight="41.0" prefWidth="320.0" promptText="interger">
+         <VBox.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <DatePicker fx:id="sugerDate">
+         <VBox.margin>
+            <Insets left="15.0" />
+         </VBox.margin>
+      </DatePicker>
+      <HBox prefHeight="32.0" prefWidth="310.0" spacing="30.0">
+         <children>
+            <Button fx:id="todayButtonSuger" mnemonicParsing="false" onAction="#setTodaySuger" prefHeight="32.0" prefWidth="62.0" style="-fx-background-color: teal; -fx-background-radius: 10;" text="Today" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="resetButtonSuger" mnemonicParsing="false" onAction="#setResetSuger" prefHeight="31.0" prefWidth="63.0" style="-fx-background-color: teal; -fx-background-radius: 10;" text="Reset" textFill="WHITE" />
+            <Button fx:id="saveButtonSuger" mnemonicParsing="false" onAction="#HandleSaveSuger" prefHeight="33.0" prefWidth="56.0" style="-fx-background-color: ff3232;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font></Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Input Your Blood Pressure" wrappingWidth="258.58203125">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="20.0" top="30.0" />
+         </VBox.margin>
+      </Text>
+      <TextField fx:id="pressureInput" prefHeight="41.0" prefWidth="320.0" promptText="interger">
+         <VBox.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <DatePicker fx:id="pressureDateInput">
+         <VBox.margin>
+            <Insets bottom="10.0" left="15.0" right="10.0" top="5.0" />
+         </VBox.margin>
+      </DatePicker>
+      <HBox fx:id="todayButtonPressure" prefHeight="32.0" prefWidth="310.0" spacing="30.0">
+         <children>
+            <Button fx:id="pressureTodayButton" mnemonicParsing="false" onAction="#setTodayPressure" prefHeight="33.0" prefWidth="59.0" style="-fx-background-color: teal; -fx-background-radius: 10;" text="Today" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="pressureResterButton" mnemonicParsing="false" onAction="#setResetPressure" prefHeight="34.0" prefWidth="58.0" style="-fx-background-color: teal; -fx-background-radius: 10;" text="Reset" textFill="WHITE" />
+            <Button fx:id="saveButtonePressure" mnemonicParsing="false" onAction="#savePressure" prefHeight="32.0" prefWidth="60.0" style="-fx-background-color: ff3232;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font></Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,11 @@
+/* Normal button style */
+.button {
+    -fx-background-color: #FF3232; /* Original red color */
+    -fx-text-fill: white;          /* White text */
+}
+
+/* Hover effect for button */
+.button:hover {
+    -fx-background-color: #45a049; /* Darker green on hover */
+    -fx-text-fill: yellow;          /* Change text color to white (or any color) */
+}

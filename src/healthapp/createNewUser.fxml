@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: lavenderblush;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthapp.CreateNewUserController">
+   <children>
+      <Text fx:id="userIdLabel" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="userId" maxWidth="1200.0" prefHeight="30.0" prefWidth="600.0" promptText="Enter An Unique User ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextArea>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="password" maxWidth="1200.0" prefHeight="30.0" prefWidth="600.0" promptText="Enter Password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextArea>
+      <Text fx:id="userIdLabel1" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="nameTextField" maxWidth="1200.0" prefHeight="30.0" prefWidth="600.0" promptText="Enter Your Full Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Weight">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="weight" maxWidth="200.0" prefHeight="36.0" prefWidth="100.0" promptText="in Kilogram(Kg)">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Height">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Slider fx:id="heightSIdeBar" majorTickUnit="10.0" max="250.0" min="50.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" style="-fx-background-color: aliceblue;" value="50.0" />
+      <HBox prefHeight="39.0" prefWidth="550.0" spacing="30.0">
+         <children>
+            <Label fx:id="centimeterLabel" alignment="CENTER" prefHeight="38.0" prefWidth="96.0" style="-fx-background-color: lightblue;" text="centimeter" textFill="#1e1e1e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="feetLabel" alignment="CENTER" prefHeight="37.0" prefWidth="103.0" style="-fx-background-color: lightblue;" text="Inch">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sex">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="sexBox" prefWidth="150.0" style="-fx-background-color: lightblue;" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Birth">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="birthdayPicker" style="-fx-background-color: lightblue;" />
+      <Button fx:id="saveButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleSave" style="-fx-background-color: ff3232; -fx-background-radius: 20;" text="Save All And Create" textFill="#e8e8e8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+   <padding>
+      <Insets left="25.0" right="25.0" />
+   </padding>
+</VBox>

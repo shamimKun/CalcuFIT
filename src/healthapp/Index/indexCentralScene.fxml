@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="510.0" spacing="10.0" style="-fx-background-color: LIGHTSKYBLUE;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthapp.Index.IndexCentralSceneController">
+   <children>
+      <VBox prefHeight="432.0" prefWidth="255.0" spacing="5.0" HBox.hgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="217.0" prefWidth="255.0" spacing="3.0" style="-fx-background-color: teal; -fx-background-radius: 20;" VBox.vgrow="ALWAYS">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ideal Weight">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="30.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="idealLabel" prefHeight="108.0" prefWidth="255.0" text="15" textFill="#ffff3d">
+                     <font>
+                        <Font name="Impact" size="70.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="idealMessage" prefHeight="47.0" prefWidth="255.0" text="label" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="217.0" prefWidth="255.0" spacing="3.0" style="-fx-background-color: teal; -fx-background-radius: 20;" VBox.vgrow="ALWAYS">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Body Fat ">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="30.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="fatLabel" prefHeight="108.0" prefWidth="255.0" text="15" textFill="#ffff3d">
+                     <font>
+                        <Font name="Impact" size="70.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="fatMessage" prefHeight="47.0" prefWidth="255.0" text="label" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="432.0" prefWidth="255.0" spacing="5.0" HBox.hgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="217.0" prefWidth="255.0" spacing="3.0" style="-fx-background-color: teal; -fx-background-radius: 20;" VBox.vgrow="ALWAYS">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="BMI">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="bmiLabel" prefHeight="108.0" prefWidth="255.0" text="15" textFill="#ffff3d">
+                     <font>
+                        <Font name="Impact" size="70.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bmiMessage" prefHeight="47.0" prefWidth="255.0" text="label" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font></Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="217.0" prefWidth="255.0" spacing="3.0" style="-fx-background-color: teal; -fx-background-radius: 20;" VBox.vgrow="ALWAYS">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="BMR">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="bmrLabel" prefHeight="108.0" prefWidth="255.0" text="15" textFill="#ffff3d">
+                     <font>
+                        <Font name="Impact" size="70.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bmrMessage" prefHeight="47.0" prefWidth="255.0" text="label" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>

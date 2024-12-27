@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="510.0" spacing="8.0" style="-fx-background-color: LIGHTSKYBLUE;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthapp.Activities.ActivitiesCentralSceneController">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-radius: 20; -fx-background-color: white;" VBox.vgrow="ALWAYS">
+         <children>
+            <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Walking" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="walkingInputText" layoutX="8.0" layoutY="50.0" onAction="#saveInWalkingHashMap" prefHeight="38.0" prefWidth="227.0" promptText="insert step count" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
+            <ImageView fitHeight="70.0" fitWidth="62.0" layoutX="500.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0">
+               <image>
+                  <Image url="@walkIcon.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-radius: 20; -fx-background-color: white;" VBox.vgrow="ALWAYS">
+         <children>
+            <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Running" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="runningInputText" layoutX="8.0" layoutY="50.0" onAction="#saveInRunningHashMap" prefHeight="38.0" prefWidth="227.0" promptText="insert running time(minutes)" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
+            <ImageView fitHeight="70.0" fitWidth="62.0" layoutX="500.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0">
+               <image>
+                  <Image url="@running.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-radius: 20; -fx-background-color: white;" VBox.vgrow="ALWAYS">
+         <children>
+            <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Swimming" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="swimmimgInputText" layoutX="8.0" layoutY="50.0" onAction="#saveInSwiimingHashMap" prefHeight="38.0" prefWidth="227.0" promptText="insert swimming time(minutes)" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
+            <ImageView fitHeight="70.0" fitWidth="62.0" layoutX="500.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0">
+               <image>
+                  <Image url="@swimming.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-radius: 20; -fx-background-color: white;" VBox.vgrow="ALWAYS">
+         <children>
+            <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exercise" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="excerciseInputText" layoutX="8.0" layoutY="50.0" onAction="#saveInExeciseHashMap" prefHeight="38.0" prefWidth="227.0" promptText="Insert excercise time(minutes)" style="-fx-background-radius: 10;" AnchorPane.leftAnchor="15.0" />
+            <ImageView fitHeight="70.0" fitWidth="62.0" layoutX="500.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0">
+               <image>
+                  <Image url="@exerc.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

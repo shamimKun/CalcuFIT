@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="432.0" prefWidth="510.0" stylesheets="@imageStyle.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthapp.Delete.DeleteSceneController">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="165.0" prefWidth="184.0" spacing="10.0" AnchorPane.leftAnchor="15.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="96.0" style="-fx-background-color: teal;" text="Delete A Data" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="choiceBox" prefHeight="25.0" prefWidth="187.0" />
+            <DatePicker fx:id="datePicker" prefHeight="25.0" prefWidth="188.0" />
+            <HBox prefHeight="27.0" prefWidth="143.0" spacing="50.0">
+               <children>
+                  <Button fx:id="leftButton" mnemonicParsing="false" onAction="#handleLeft" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: teal;" text="&lt;" textFill="WHITE">
+                     <font>
+                        <Font name="Monospaced Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="rightButton" mnemonicParsing="false" onAction="#handleRight" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: teal;" text="&gt;" textFill="WHITE">
+                     <font>
+                        <Font name="Monospaced Bold" size="12.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#handleDelete" text="Delete" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Comic Sans MS Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER_RIGHT" layoutX="353.0" layoutY="14.0" prefHeight="177.0" prefWidth="184.0" spacing="10.0" AnchorPane.rightAnchor="15.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="96.0" style="-fx-background-color: teal;" text="Edit A Data" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="choiceBox2" prefHeight="25.0" prefWidth="179.0" />
+            <DatePicker fx:id="datePicker2" prefHeight="25.0" prefWidth="182.0" />
+            <HBox prefHeight="27.0" prefWidth="143.0" spacing="40.0">
+               <children>
+                  <Button fx:id="leftButton2" mnemonicParsing="false" onAction="#handleLeft2" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: teal;" text="&lt;" textFill="WHITE">
+                     <font>
+                        <Font name="Monospaced Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="rightButton2" mnemonicParsing="false" onAction="#handleRight2" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: teal;" text="&gt;" textFill="WHITE" />
+               </children>
+            </HBox>
+            <TextField fx:id="editValue" />
+            <Button fx:id="editButton" mnemonicParsing="false" onAction="#handleEdit" prefHeight="25.0" prefWidth="48.0" text="Edit" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="39.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

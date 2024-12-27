@@ -1,0 +1,6 @@
+#centralPane {
+    -fx-background-image: url("gintoki3.gif");  /* Ensure this image is in the same directory */
+    -fx-background-size: 55% 70%;  /* Ensure the image resizes to fit the pane */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: bottom;  /* Center the image */
+}

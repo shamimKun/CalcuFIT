@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="432.0" prefWidth="312.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthapp.Index.IndexSideSceneController">
+   <children>
+      <VBox layoutX="1.0" prefHeight="432.0" prefWidth="312.0" spacing="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="BMI Chart">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: teal;" text="&gt;14" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="133.0" style="-fx-background-color: coral;" text="Underweight" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="8.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: teal;" text="&gt;25" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="133.0" style="-fx-background-color: coral;" text="Healthy" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="19.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: teal;" text="&gt;30" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="133.0" style="-fx-background-color: coral;" text="OverWeight" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="12.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: teal;" text="30+" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="133.0" style="-fx-background-color: coral;" text="Obese" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label prefHeight="19.0" prefWidth="153.0" text="Body Fat Chart (Male)">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: teal;" text="&gt;6" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="133.0" style="-fx-background-color: coral;" text="Essential Fat" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="8.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: teal;" text="&gt;14" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="133.0" style="-fx-background-color: coral;" text="Athletic" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="19.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: teal;" text="&gt;18" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="133.0" style="-fx-background-color: coral;" text="Fit" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="12.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: teal;" text="&gt;25" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="133.0" style="-fx-background-color: coral;" text="Acceptable" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="12.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: teal;" text="25+" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="133.0" style="-fx-background-color: coral;" text="Obese" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label prefHeight="19.0" prefWidth="153.0" text="Body Fat Chart (Female)">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: teal;" text="&gt;14" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="133.0" style="-fx-background-color: coral;" text="Essential Fat" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="8.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: teal;" text="&gt;21" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="133.0" style="-fx-background-color: coral;" text="Athletic" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="19.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: teal;" text="&gt;25" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="133.0" style="-fx-background-color: coral;" text="Fit" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="12.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: teal;" text="&gt;32" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="133.0" style="-fx-background-color: coral;" text="Acceptable" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="12.0" prefWidth="312.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="67.0" style="-fx-background-color: teal;" text="32+" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="133.0" style="-fx-background-color: coral;" text="Obese" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="49.0" fitWidth="294.0" layoutX="125.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="6.0">
+                     <image>
+                        <Image url="@bmi.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
