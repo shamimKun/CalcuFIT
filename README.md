@@ -10,4 +10,7 @@
 - **JDK 1.8** or **JavaFX Library** added JVM  
 
 #### Testing the Application Without Java:
-To test the application without needing Java setup, switch to the `calcuFITexecutbale` branch and run the `CalcuFIT.exe` executable.
+To test the application without needing Java setup, switch to the `calcuFITexecutbale` branch ,download the Reporisotory, and run the `CalcuFIT.exe` executable.
+
+#### Testing the Application in an Already Installed Java Version 8 Environment:
+The `.jre` package file is also supplied in the `master` branch. Just download that and run the jre.
